@@ -1,0 +1,146 @@
+/* palette #c4cfa1, #8b956d, #4d533c, #1f1f1f */
+@font-face {
+ font-family: oldschoo;
+ src: url("../asset/font/Gamegirl.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: oldschoo;
+ src: url("../asset/font/Gamegirl.ttf") /* TTF file for CSS3 browsers */
+}
+
+html, body {
+  background: #c4cfa1;
+  color: #1f1f1f;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a, a:visited {
+  color: #8b956d;
+}
+
+/**********
+ *  HEADER
+ **********/
+h1 {
+    -webkit-transform: scale(0.8);  /* Chrome, Safari 3.1+ */
+     -moz-transform: scale(0.8);  /* Firefox 3.5+ */
+      -ms-transform: scale(0.8);  /* IE 9 */
+       -o-transform: scale(0.8);  /* Opera 10.50-12.00 */
+          transform: scale(0.8);  /* Firefox 16+, IE 10+, Opera 12.50+*/
+  font-size: 1.1em;
+  word-spacing: 1.6em;
+  width: 22em;
+  margin: 0;
+  padding: 0;
+}
+h1 * {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+h1 svg {
+  display: block;
+  margin-bottom: .5em;
+}
+h1>em {
+  display: block;
+  font-style: normal;
+}
+
+header nav {
+  font-size: 1.7em;
+  background: #1f1f1f;
+  color: #c4cfa1;
+  display: inline-block;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: .5em;
+}
+header nav ul {
+  font-family: oldschoo, monospace;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  margin: .2em 0;
+}
+header nav li:before {
+  content: '\25B6\00a0';
+  color: #1f1f1f;
+}
+header nav li:hover:before, header nav li:active:before {
+  content: '\25B6\00a0';
+  color: #c4cfa1;
+}
+
+/***********
+ * MAIN
+ ***********/
+main {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+main em {
+  font-weight: 600;
+}
+
+main .logostyle { /* gameboy font is large */
+  font-size: .65em;
+}
+/**********
+ * FOOTER
+ **********/
+footer {
+  background: #1f1f1f;
+  margin-top: 1em;
+  color: #c4cfa1;
+  font-family: oldschoo, monospace;
+  padding: 1em;
+}
+
+footer ul {
+  margin: 0;
+}
+
+/* OTHER STYLES */
+.logostyle {
+  font-family: oldschoo, monospace;
+  text-shadow: 0 -2px -3px #8b956d;
+  color: #4d533c;
+}
+
+.showmobileinline, .showmobileblock {
+  display: none;
+}
+/*========
+ * MOBILE
+ *========*/
+@media screen and (max-width: 32em) {
+  header h1 {
+	margin: 0 auto;
+  }
+  
+  header nav {
+	position: static;
+	display: block;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 1em 0;
+	margin: 0;
+  }
+  
+  .showmobileblock {
+	display: block;
+  }
+  
+  .showmobileinline {
+	display: inline;
+  }
+  
+  .hidemobile {
+	display: none;
+  }
+}
