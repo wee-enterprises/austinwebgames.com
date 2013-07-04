@@ -81,6 +81,10 @@ header {
 	margin: 0 0 0.3em 0;
 	line-height: 1em;
 }
+.next-meetup .label {
+	display: inline-block;
+	width: 60px;
+}
 .next-meetup a {
 	color: #fff;
 }
