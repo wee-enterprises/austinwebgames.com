@@ -13,6 +13,9 @@ html, body {
 	color: #000;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+body {
+	min-width: 60em;
+}
 
 a {
 	color: #0092bf;
@@ -31,7 +34,7 @@ header {
 }
 .logo-block {
 	word-spacing: 1.6em;
-	margin: 0;
+	margin: 0 2em 0 0;
 	padding: 0;
 }
 .logo-block * {
@@ -64,6 +67,26 @@ header {
 	fill: #fff;
 	transition: fill 0.5s;
 }
+.next-meetup {
+	float: left;
+	margin: 0;
+}
+.next-meetup h2 {
+	margin: 0;
+}
+dl.meetingDetail {
+	line-height: 1.6em;
+	margin: 0;
+}
+dl.meetingDetail dt, dl.meetingDetail dd {
+	display: table-cell;
+}
+dl.meetingDetail dt {
+	float: left;
+	min-width: 5em;
+}
+dl.meetingDetail dd {
+}
 .logo-block h1 {
 	font-size: 1.1em;
 }
@@ -72,22 +95,6 @@ header {
 	font-style: normal;
 }
 
-.next-meetup {
-	float: left;
-	margin-left: 50px;
-	line-height: 2em;
-}
-.next-meetup h2 {
-	margin: 0 0 0.3em 0;
-	line-height: 1em;
-}
-.next-meetup .label {
-	display: inline-block;
-	width: 60px;
-}
-.next-meetup a {
-	color: #fff;
-}
 .clear {
 	clear: both;
 }
@@ -168,9 +175,22 @@ footer ul {
  * MOBILE
  *========*/
 @media screen and (max-width: 32em) {
+	body {
+		min-width: auto;
+	}
 	.logo-block h1 {
 		margin: 0 auto;
 		font-size: 0.8em;
+	}
+
+	.next-meetup {
+		font-size: 1em;
+	}
+	.next-meetup h2 {
+		text-align: center;
+	}
+	dl.meetingDetail dt {
+		min-width: 4em;
 	}
 	
 	header nav {
@@ -183,8 +203,7 @@ footer ul {
 	}
 	
 	.next-meetup {
-		margin-left: 0;
-		margin-top: 1rem;
+		margin-top: 1em;
 	}
 		
 	footer input {
