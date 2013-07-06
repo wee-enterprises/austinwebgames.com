@@ -14,7 +14,7 @@ html, body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 body {
-	min-width: 60em;
+/*	min-width: 60em;*/
 }
 
 a {
@@ -31,8 +31,7 @@ header {
 }
 .logo-block {
 	float: left;
-}
-.logo-block {
+	white-space: nowrap;
 	word-spacing: 1.6em;
 	margin: 0 2em 0 0;
 	padding: 0;
@@ -69,7 +68,7 @@ header {
 }
 .next-meetup {
 	float: left;
-	margin: 0;
+	margin: 1em 0 0 0;
 }
 .next-meetup h2 {
 	margin: 0;
@@ -137,8 +136,11 @@ footer .twitter {
 	background-size: auto 100%;
 }
 
-footer form {
-	display: inline-block;
+footer .social, footer form {
+	float: left;
+}
+footer .social {
+	margin: 0 2em 2em 0;
 }
 
 footer input {
@@ -176,7 +178,7 @@ footer ul {
  *========*/
 @media screen and (max-width: 32em) {
 	body {
-		min-width: auto;
+		min-width: auto !important;
 	}
 	.logo-block h1 {
 		margin: 0 auto;
