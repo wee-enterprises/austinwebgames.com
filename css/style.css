@@ -96,6 +96,7 @@ dl.meetingDetail dd {
 
 .clear {
 	clear: both;
+	height: 0;
 }
 
 /***********
@@ -140,7 +141,7 @@ footer .social, footer form {
 	float: left;
 }
 footer .social {
-	margin: 0 2em 2em 0;
+	margin: 0 2em 0 2em;
 }
 
 footer input {
