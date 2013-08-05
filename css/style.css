@@ -68,7 +68,7 @@ header {
 }
 .next-meetup {
 	float: left;
-	margin: 1em 0 0 0;
+	margin: 0 0 0 0;
 }
 .next-meetup h2 {
 	margin: 0;
